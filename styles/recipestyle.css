@@ -1,0 +1,71 @@
+h1, h2, ul, ol, p{
+  display: block;
+  position: relative;
+  width: 550px;
+  margin: 0;
+}
+h2{
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+h1{
+  padding-top: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+h1, h2{
+  font-family: 'Indie Flower', cursive;
+}
+p{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  text-transform: capitalize;
+}
+body{
+  background-color: rgb(179, 150, 129);
+}
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+li{
+  font-size: 20px;
+}
+.leftlist{
+  float: left;
+  width: 200px;
+  padding-right: 80px;
+}
+.rightlist{
+  float: left;
+  width: 200px;
+}
+.instructions{
+  display: block;
+  position: relative;
+  padding-bottom: 30px;
+}
+.ingredients{
+  display: inline-block;
+  position: relative;
+  width: 550px;
+  margin: auto;
+}
+img{
+  position: relative;
+  display: block;
+  width: 580px;
+  left: 10px;
+  height: 450px;
+}
+.middle{
+  display: block;
+  position: relative;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(199, 170, 149);
+}

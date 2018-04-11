@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2{
+  font-family: 'Indie Flower', cursive;
+}
+
+#bigtext {
+  font-size: 50px;
+}
+body{
+  background-color: rgb(179, 150, 129);
+}
+
+.navbar{
+  overflow: hidden;
+  background-color: #333;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar a{
+  color: #bababa;
+  display: block;
+  float: left;
+  padding: 14px 13px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a.right{
+  float: right;
+}
+
+.navbar a.blue{
+  font-weight: bold;
+  color: #4da0ff;
+  font-size: 16px;
+}
+
+.navbar a:hover{
+  color: white;
+}
+
+.header{
+  padding: 50px 80px 30px 80px;
+  text-align: center;
+  background-color: #6c5748;
+  color: white;
+}
+
+.navbackground{
+  position: absolute;
+  background-color: #333;
+  display: block;
+  height: 50px;
+}
+
+#top-nav {
+  width: 100%;
+  position: fixed;
+  background-color: #333;
+}
+
+.navbar a.signup{
+  position: relative;
+  color: white;
+  font-weight: bold;
+  background-color: #3b86db;
+  border-radius: 2px;
+  top: 8px;
+  padding: 6px 16px;
+}
+
+.navbar a.signup:hover{
+  background-color: #68adfc;
+}
+
+.content{
+  display: block;
+  position: relative;
+  width: 600px;
+  height: 100%;
+  background-color: #c7aa95;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+}
