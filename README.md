@@ -9,4 +9,4 @@ still to add:
 6. adding a rating system
 7. adding a sharing system
 
-at present I have no server knowlege and am in teh process of learning javascript. April 2018
+at present I have no server knowlege and am in the process of learning javascript. April 2018
