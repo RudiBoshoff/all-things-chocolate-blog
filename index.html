@@ -8,14 +8,18 @@
   <meta charset="UTF-8">
   <!--"viewport" makes the website look good on all devices and screen resolutions-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- couldnt get the html file to link to the external js file.
+  <script src="scripts/script.js"></script> -->
+
 </head>
 <body>
 <div class="header">
  <h1>Welcome to the</h1>
  <h1 id="bigtext">All Things Chocolate blog</h1>
 </div>
-<header id="top-nav">
-  <div class="navbar">
+<header id="navbar">
+  <div class="topnavbar">
       <a href="#"> Newest</a>
       <a href="#" class="blue"> Surprise Me</a>
       <a href="#"> Biscuits</a>
@@ -44,6 +48,37 @@
   <div class="breakline">
     <p>----------------------------------------&hearts; &hearts; &hearts;----------------------------------------</p>
   </div>
+  <div class="userC">
+    <h1>Volcano Cake</h1>
+    <p>serves 1</p>
+    <img src="https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/hotchocfondantpuddings_lg.jpg" alt="Hot molten chocolate dessert.">
+  </div>
+  <div class="breakline">
+    <p>----------------------------------------&hearts; &hearts; &hearts;----------------------------------------</p>
+  </div>
+  <div class="userD">
+    <h1>Hot Chocolate Pots</h1>
+    <p>serves 1</p>
+    <img src="./images/hot_chocolate_pots.jpg" alt="Hot molten dessert pots.">
+  </div>
+  <div class="breakline">
+    <p>----------------------------------------&hearts; &hearts; &hearts;----------------------------------------</p>
+  </div>
 </div>
+<!-- added the javascript here instead -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>

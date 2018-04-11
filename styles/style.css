@@ -4,8 +4,9 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1, h2{
+h1{
   font-family: 'Indie Flower', cursive;
+  text-transform: capitalize;
 }
 
 #bigtext {
@@ -15,7 +16,7 @@ body{
   background-color: rgb(179, 150, 129);
 }
 
-.navbar{
+.topnavbar{
   overflow: hidden;
   background-color: #333;
   width: 960px;
@@ -23,7 +24,7 @@ body{
   margin-right: auto;
 }
 
-.navbar a{
+.topnavbar a{
   color: #bababa;
   display: block;
   float: left;
@@ -33,17 +34,17 @@ body{
   font-size: 16px;
 }
 
-.navbar a.right{
+.topnavbar a.right{
   float: right;
 }
 
-.navbar a.blue{
+.topnavbar a.blue{
   font-weight: bold;
   color: #4da0ff;
   font-size: 16px;
 }
 
-.navbar a:hover{
+.topnavbar a:hover{
   color: white;
 }
 
@@ -53,21 +54,21 @@ body{
   background-color: #6c5748;
   color: white;
 }
-
+/*
 .navbackground{
   position: absolute;
   background-color: #333;
   display: block;
   height: 50px;
 }
-
-#top-nav {
+*/
+#navbar {
   width: 100%;
-  position: static;
   background-color: #333;
+  overflow: hidden;
 }
 
-.navbar a.signup{
+.topnavbar a.signup{
   position: relative;
   color: white;
   font-weight: bold;
@@ -77,7 +78,7 @@ body{
   padding: 6px 16px;
 }
 
-.navbar a.signup:hover{
+.topnavbar a.signup:hover{
   background-color: #68adfc;
 }
 
@@ -90,7 +91,10 @@ body{
   margin-left: auto;
   margin-right: auto;
   top: 0px;
+  z-index: 10;
+  padding-top: 30px;
 }
+
 img{
   position: relative;
   display: block;
@@ -98,6 +102,7 @@ img{
   left: 10px;
   height: 450px;
 }
+
 /*Creates the cute heart and dotted line divider*/
 .breakline {
   color: #8c8b8b;
@@ -105,9 +110,23 @@ img{
   font-size: 18px;
   padding-top: 10px;
 }
+
 .content h1,p{
   text-align: center;
 }
+
 .content h1:hover{
   text-decoration: underline;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
