@@ -14,57 +14,78 @@
 
 </head>
 <body>
+
 <div class="header">
  <h1>Welcome to the</h1>
  <h1 id="bigtext">All Things Chocolate blog</h1>
 </div>
+
 <header id="navbar">
   <div class="topnavbar">
-      <a href="#"> Newest</a>
+      <a href="#"> Trending</a>
       <a href="#" class="blue"> Surprise Me</a>
       <a href="#"> Biscuits</a>
       <a href="#"> Cakes</a>
       <a href="#"> Puddings</a>
       <a href="#"> Snacks</a>
+      <a href="#"> Tarts</a>
       <!-- sign up button should be on top right for familarity-->
       <a href="#" class="right signup">Sign up</a>
-      <a href="#" class="right"> Login</a>
+      <a href="#" class="right"> Log in</a>
   </div>
 </header>
+
 <div class="content">
-  <div class="userA">
-    <h1>Economical Chocolate Pudding</h1>
-    <p>serves 4-6</p>
+  <div class="user">
+    <div class="userInfo">
+      <div class="postTitle">
+        <a>Economical Chocolate Pudding</a>
+        <p>serves 4-6</p>
+      </div>
+      <a class="userleft">userA</a>
+      <a class="dateright">posted: 14 April</a>
+    </div>
     <img src="https://d2mkh7ukbp9xav.cloudfront.net/recipeimage/sfiivj0g-3a876-506873-cfcd2-wfwcbl9y/5deb3660-722c-4062-b32d-34058e7e346d/main/self-saucing-chocolate-pudding.jpg" alt="A delicious saucy chocolate pudding.">
+    <div class="like">
+      <img src="./images/heart.png">
+    </div>
+    <div class="additional">
+      <a class="comment">Comment</a>
+      <a class="share">Share +</a>
+    </div>
   </div>
   <div class="breakline">
     <p>----------------------------------------&hearts; &hearts; &hearts;----------------------------------------</p>
   </div>
-  <div class="userB">
+  <div class="user">
     <h1>Chocolate Fridge Tart</h1>
     <p>serves 10</p>
     <img src="https://taste.co.za/wp-content/uploads/2018/03/Chocolate-Easter-fridge-cake-400x400.png" alt="A delicious textured dessert.">
+    <img class="like" src="./images/heart.png">
   </div>
   <div class="breakline">
     <p>----------------------------------------&hearts; &hearts; &hearts;----------------------------------------</p>
   </div>
-  <div class="userC">
+  <div class="user">
     <h1>Volcano Cake</h1>
     <p>serves 1</p>
     <img src="https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/hotchocfondantpuddings_lg.jpg" alt="Hot molten chocolate dessert.">
+    <img class="like" src="./images/heart.png">
   </div>
   <div class="breakline">
     <p>----------------------------------------&hearts; &hearts; &hearts;----------------------------------------</p>
   </div>
-  <div class="userD">
+  <div class="user">
     <h1>Hot Chocolate Pots</h1>
     <p>serves 1</p>
     <img src="./images/hot_chocolate_pots.jpg" alt="Hot molten dessert pots.">
+    <img class="like" src="./images/heart.png">
   </div>
   <div class="breakline">
     <p>----------------------------------------&hearts; &hearts; &hearts;----------------------------------------</p>
   </div>
 </div>
+
 <!-- added the javascript here instead -->
 <script>
 window.onscroll = function() {myFunction()};

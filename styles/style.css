@@ -2,16 +2,22 @@
   padding: 0;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
 }
 
-h1{
-  font-family: 'Indie Flower', cursive;
-  text-transform: capitalize;
+h1 {
+    font-family: 'Indie Flower', cursive;
 }
 
 #bigtext {
   font-size: 50px;
+  text-transform: capitalize;
 }
+
+p {
+  text-transform: capitalize;
+}
+
 body{
   background-color: rgb(179, 150, 129);
 }
@@ -49,19 +55,12 @@ body{
 }
 
 .header{
-  padding: 50px 80px 30px 80px;
+  padding: 20px 80px 20px 80px;
   text-align: center;
   background-color: #6c5748;
   color: white;
 }
-/*
-.navbackground{
-  position: absolute;
-  background-color: #333;
-  display: block;
-  height: 50px;
-}
-*/
+
 #navbar {
   width: 100%;
   background-color: #333;
@@ -85,7 +84,7 @@ body{
 .content{
   display: block;
   position: relative;
-  width: 600px;
+  width: 960px;
   height: 100%;
   background-color: #c7aa95;
   margin-left: auto;
@@ -98,9 +97,9 @@ body{
 img{
   position: relative;
   display: block;
-  width: 580px;
-  left: 10px;
-  height: 450px;
+  width: 600px;
+  margin: auto;
+  height: 500px;
 }
 
 /*Creates the cute heart and dotted line divider*/
@@ -109,14 +108,28 @@ img{
 	text-align: center;
   font-size: 18px;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 
-.content h1,p{
+.content p {
   text-align: center;
 }
 
-.content h1:hover{
+.content a:hover {
   text-decoration: underline;
+}
+
+.postTitle {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.postTitle a {
+  font-size: 2em;
+  font-family: 'Indie Flower', cursive;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -129,4 +142,51 @@ img{
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+.like {
+  position: relative;
+  bottom: 120px;
+  height: auto;
+}
+
+.like img{
+  position: relative;
+  width: 40px;
+  height: auto;
+  z-index: 150;
+  padding: 0;
+}
+
+.userleft, .comment {
+  position: relative;
+  float: left;
+  color: #4273ac;
+  font-weight: bold;
+}
+
+.dateright, .share {
+  position: relative;
+  float: right;
+  color: #4273ac;
+  font-weight: bold;
+}
+
+.additional {
+  position: relative;
+  bottom: 40px;
+  height: 25px;
+  width: 600px;
+  margin: auto;
+}
+
+.userInfo {
+  position: relative;
+  height: 87px;
+  width: 600px;
+  margin: auto;
+}
+
+.user {
+  height: 592px;
 }
