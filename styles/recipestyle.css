@@ -1,71 +1,208 @@
-h1, h2, ul, ol, p{
-  display: block;
-  position: relative;
-  width: 550px;
+*{
+  padding: 0;
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
 }
-h2{
-  text-transform: uppercase;
-  padding-top: 10px;
-  padding-left: 10px;
+
+h1,h2 {
+    font-family: 'Indie Flower', cursive;
 }
-h1{
-  padding-top: 10px;
-  padding-left: 10px;
-  text-transform: uppercase;
-  text-align: center;
-}
-h1, h2{
-  font-family: 'Indie Flower', cursive;
-}
-p{
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 10px;
+
+#bigtext {
+  font-size: 50px;
   text-transform: capitalize;
 }
+
+p, h1, h2 {
+  text-transform: capitalize;
+}
+
 body{
   background-color: rgb(179, 150, 129);
 }
-*{
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 0;
+
+.topnavbar{
+  overflow: hidden;
+  background-color: #333;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
-li{
-  font-size: 20px;
-}
-.leftlist{
+
+.topnavbar a{
+  color: #bababa;
+  display: block;
   float: left;
-  width: 200px;
-  padding-right: 80px;
+  padding: 14px 13px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
 }
-.rightlist{
-  float: left;
-  width: 200px;
+
+.topnavbar a.right{
+  float: right;
 }
-.instructions{
+
+.topnavbar a.blue{
+  font-weight: bold;
+  color: #4da0ff;
+  font-size: 16px;
+}
+
+.topnavbar a:hover{
+  color: white;
+}
+
+.header{
+  padding: 20px 80px 20px 80px;
+  text-align: center;
+  background-color: #6c5748;
+  color: white;
+}
+
+#navbar {
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnavbar a.signup{
+  position: relative;
+  color: white;
+  font-weight: bold;
+  background-color: #3b86db;
+  border-radius: 2px;
+  top: 8px;
+  padding: 6px 16px;
+}
+
+.topnavbar a.signup:hover{
+  background-color: #68adfc;
+}
+
+.content{
   display: block;
   position: relative;
-  padding-bottom: 30px;
+  width: 960px;
+  height: 100%;
+  background-color: #c7aa95;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  z-index: 10;
+  padding-top: 30px;
 }
+
+img{
+  position: relative;
+  display: block;
+  width: 800px;
+  margin: auto;
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.postTitle p {
+  text-align: center;
+}
+
+.postTitle h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+}
+
+.like {
+  position: relative;
+  bottom: 120px;
+  height: auto;
+  width: 40px;
+  margin: auto;
+}
+
+.like img{
+  position: relative;
+  width: 40px;
+  height: auto;
+  z-index: 150;
+  padding: 0;
+  filter: grayscale(85%);
+}
+
+.like :hover{
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+.userleft, .comment {
+  position: relative;
+  float: left;
+  color: #4273ac;
+  font-weight: bold;
+}
+
+.dateright {
+  position: relative;
+  float: right;
+  color: #737373;
+  font-weight: bold;
+}
+
+.share {
+  position:relative;
+  float: right;
+  color: #4273ac;
+  font-weight: bold;
+}
+
+.additional {
+  position: relative;
+  bottom: 40px;
+  height: 25px;
+  width: 800px;
+  margin: auto;
+}
+
+.userInfo {
+  position: relative;
+  height: 87px;
+  width: 800px;
+  margin: auto;
+}
+
+.user{
+  height: 630px;
+}
+
+/* Recipe Contents*/
 .ingredients{
   display: inline-block;
   position: relative;
   width: 550px;
-  margin: auto;
+  left: -111px;
+  top:-10px;
+  text-align: left;
 }
-img{
-  position: relative;
-  display: block;
-  width: 580px;
-  left: 10px;
-  height: 450px;
+
+.leftlist{
+  float: left;
+  width: 350px;
 }
-.middle{
+
+.rightlist{
+  float: left;
+}
+
+.instructions{
   display: block;
   position: relative;
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(199, 170, 149);
+  left: 40px;
+  top: 10px;
+  padding-bottom: 30px;
+}
+
+li{
+  font-size: 20px;
 }
